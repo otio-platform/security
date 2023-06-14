@@ -13,19 +13,24 @@
   "bugs": {
     "url": "https://github.com/trans-stat/tas-security/issues"
   },
-  "type": "module",
-  "main": "dist/index.js",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "build": "tsc && node ./build/build.js",
     "start": "node ./build/serve.js",
-    "analyze": "node ./build/analyze.js"
+    "analyze": "node ./build/analyze.js",
+    "test": "cypress open"
   },
   "dependencies": {
     "tslib": "^2.5.3"
   },
   "devDependencies": {
+    "@types/node": "^20.3.1",
+    "cypress": "^12.14.0",
     "esbuild": "^0.18.1",
     "esbuild-plugin-tsc": "^0.4.0",
+    "rimraf": "^5.0.1",
     "typescript": "^5.1.3"
   }
 }
