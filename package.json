@@ -1,0 +1,31 @@
+{
+  "name": "@trans-stat/tas-security",
+  "version": "0.0.1",
+  "author": "trans-stat",
+  "description": "Advanced security solutions for custom enterprise web applications",
+  "homepage": "https://github.com/trans-stat/tas-security#readme",
+  "license": "MIT",
+  "packageManager": "npm@9.1.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trans-stat/tas-security.git"
+  },
+  "bugs": {
+    "url": "https://github.com/trans-stat/tas-security/issues"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc && node ./build/build.js",
+    "start": "node ./build/serve.js",
+    "analyze": "node ./build/analyze.js"
+  },
+  "dependencies": {
+    "tslib": "^2.5.3"
+  },
+  "devDependencies": {
+    "esbuild": "^0.18.1",
+    "esbuild-plugin-tsc": "^0.4.0",
+    "typescript": "^5.1.3"
+  }
+}
