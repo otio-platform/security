@@ -1,7 +1,7 @@
 import { generateCustomData } from 'cem-plugin-vs-code-custom-data-generator';
 
 export default {
-  globs: ['src/**/index.ts'],
+  globs: ['src/**/define.ts'],
   outdir: 'dist',
   dev: false,
   watch: false,

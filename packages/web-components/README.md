@@ -22,7 +22,7 @@ yarn add @trans-stat/auth-components
 These two packages create a fullstack wrapper for [iValt's](https://ivalt.com) biometrics API
 1. Define the component with the platform
 ```ts
-import '@trans-stat/auth-components';
+import '@trans-stat/auth-components/biometric-card';
 ```
 2. Add the element to your markup.
 ```html

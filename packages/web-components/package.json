@@ -8,6 +8,10 @@
       "import": "./dist/esm/index.js",
       "types": "./dist/dts/index.d.ts"
     },
+    "./*": {
+      "import": "./dist/esm/*/define.js",
+      "types": "./dist/dts/*/define.d.ts"
+    },
     "./metadata/package.json": "./package.json",
     "./metadata/custom-elements.json": "./dist/custom-elements.json",
     "./metadata/html-custom-data.json": "./dist/html-custom-data.json",
