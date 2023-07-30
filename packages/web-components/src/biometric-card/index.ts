@@ -1,13 +1,14 @@
+import { customElement } from '@microsoft/fast-element';
 import { cardDefinition } from '@adaptive-web/adaptive-web-components/card';
 import { textFieldDefinition } from '@adaptive-web/adaptive-web-components/text-field';
 import { buttonDefinition } from '@adaptive-web/adaptive-web-components/button';
-import { BiometricCard } from './biometric-card.js';
+import { BiometricCard as DefaultBiometricCard } from './biometric-card.js';
 import { biometricCardTemplate } from './biometric-card.template.js';
 import { biometricCardStyles } from './biometric-card.styles.js';
 
 /**
  * @tag biometric-card
- * @summary The `<biometric-card>` element can be used to send biometric requests for a given user's mobile phone number to {@link https://ivalt.com iValt's} API.
+ * @summary The `<biometric-card>` element can be used to send biometric requests for a given user's mobile phone number to iValt's API.
  * This component **only** handles the UX for capturing the user's mobile number and does not handle communication with an application's backend.
  * 
  * @fires biometric-request - A custom event that contains the form's data.
@@ -29,7 +30,7 @@ import { biometricCardStyles } from './biometric-card.styles.js';
  * @part submit-button - The button used for submitting the form.
  * @part submit-button__control - The submit button's internal control element.
  */
-const biometricCardDefinition = BiometricCard.compose({
+@customElement({
   name: 'biometric-card',
   template: biometricCardTemplate({
     card: cardDefinition,
@@ -39,13 +40,13 @@ const biometricCardDefinition = BiometricCard.compose({
     submitButtonContent: 'send request'
   }),
   styles: biometricCardStyles
-});
+})
+class BiometricCard extends DefaultBiometricCard {}
 
 export {
   BiometricCard,
   biometricCardTemplate,
   biometricCardStyles,
-  biometricCardDefinition,
 };
 
 export type {

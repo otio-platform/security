@@ -29,10 +29,12 @@
     "tslib": "^2.5.3"
   },
   "devDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.8.4",
     "@types/node": "^20.3.1",
     "esbuild": "^0.18.1",
     "esbuild-plugin-tsc": "^0.4.0",
     "rimraf": "^5.0.1",
+    "cem-plugin-vs-code-custom-data-generator": "^1.4.1",
     "typescript": "^5.1.3"
   }
 }
