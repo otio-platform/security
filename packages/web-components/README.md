@@ -37,9 +37,9 @@ const bioCard = document.getElementById('bio-card') as BiometricCard;
 /**
 * The element provides two different hooks depending on your needs.
 * The first hook is a callback property that the element calls when the submit button is clicked.
-* The second hooks is a custom event called `biometric-request` that gets emitted when the submit button is clicked.
+* The second hook is a custom event called `biometric-request` that gets emitted when the submit button is clicked.
 *
-* Both methods get passed the elements's form data.
+* Both methods get passed the element's form data.
 * 
 * How you handle the request to your backend and the resulting response is entirely up to you and your choice of frameworks.
 */
