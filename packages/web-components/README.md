@@ -1,6 +1,8 @@
 # @trans-stat/auth-components
 Web Components built with FAST for easy user authentication UX.
 
+> NOTE: This package is still early in development. Expect breaking API changes often until the package reaches a stable 1.0.0 release.
+
 > NOTE: This library is meant to be used in conjuction with the backend packages published from [tas-security](https://github.com/trans-stat/tas-security).
 While these frontend Web Components can be used without the backend packages, they will work best as a fullstack solution.
 
@@ -18,11 +20,15 @@ yarn add @trans-stat/auth-components
 ### `<biometric-card>`
 > NOTE: This element is intended to be used with the `@trans-stat/biometrics` package in the backend.
 These two packages create a fullstack wrapper for [iValt's](https://ivalt.com) biometrics API
-1. Add the element to your markup.
+1. Define the component with the platform
+```ts
+import '@trans-stat/auth-components';
+```
+2. Add the element to your markup.
 ```html
 <biometric-card id="bio-card"></biometric-card>
 ```
-2. hook into the element to send its data to your backend.
+3. hook into the element to send its data to your backend.
 ```ts
 import type { BiometricCard } from '@trans-stat/auth-components';
 
