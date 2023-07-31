@@ -1,9 +1,17 @@
 {
   "name": "@trans-stat/biometrics",
-  "description": "",
-  "version": "0.0.1",
+  "description": "Node.js esm wrapper for iValt biometric authentication.",
+  "version": "0.0.0",
   "license": "MIT",
   "type": "module",
+  "repository": "https://github.com/trans-stat/tas-security.git",
+  "publishConfig": {
+    "@trans-stat:registry": "https://npm.pkg.github.com",
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
       "development": {
