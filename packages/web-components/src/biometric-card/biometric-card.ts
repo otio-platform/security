@@ -50,7 +50,15 @@ export class BiometricCard extends FASTElement {
     const data = formValues(this.form) as BiometricCardFormData;
 
     this.callback?.(data);
-    this.$emit('biometric-request', data);
+    this.$emit(
+      'biometric-request',
+      data,
+      {
+        bubbles: false,
+        composed: true,
+        cancelable: true 
+      }
+     );
   }
 
   public connectedCallback(): void {
