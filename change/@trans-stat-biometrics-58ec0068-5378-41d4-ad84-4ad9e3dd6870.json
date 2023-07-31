@@ -1,0 +1,7 @@
+{
+  "type": "minor",
+  "comment": "Add Node.js wrapper for iValt biometrics",
+  "packageName": "@trans-stat/biometrics",
+  "email": "32497422+KingOfTac@users.noreply.github.com",
+  "dependentChangeType": "patch"
+}
