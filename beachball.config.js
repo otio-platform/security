@@ -1,8 +1,8 @@
 module.exports = {
-	disallowedChangeTypes: ['major'],
+  disallowedChangeTypes: ['major'],
   access: 'public',
-	ignorePatters: [
-		'.ignore',
+  ignorePatters: [
+    '.ignore',
     '.github/',
     '.prettierrc',
     '.vscode/',
@@ -11,5 +11,5 @@ module.exports = {
     'src/tests/',
     'src/fixtures/**',
     'package-lock.json',
-	]
+  ]
 }

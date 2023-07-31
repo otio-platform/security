@@ -4,10 +4,10 @@ import {
   type ElementViewTemplate
 } from '@microsoft/fast-element';
 import { tagFor } from '@microsoft/fast-foundation';
-import type { BiometricCard } from './biometric-card.js';
-import type { BiometricCardTemplateOptions } from './biometric-card.options.js';
+import type { MFACard } from './mfa-card.js';
+import type { MFACardTemplateOptions } from './mfa-card.options.js';
 
-export const biometricCardTemplate = <T extends BiometricCard>(options: BiometricCardTemplateOptions): ElementViewTemplate<T> => {
+export const mfaCardTemplate = <T extends MFACard>(options: MFACardTemplateOptions): ElementViewTemplate<T> => {
   const card = html.partial(tagFor(options.card));
   const textField = html.partial(tagFor(options.textField));
   const button = html.partial(tagFor(options.button));

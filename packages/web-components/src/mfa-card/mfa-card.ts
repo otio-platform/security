@@ -1,9 +1,9 @@
 import { FASTElement, attr, observable, nullableNumberConverter } from '@microsoft/fast-element';
 import { formValues } from '@open-wc/form-helpers';
 import { densityItemContainer } from '@adaptive-web/adaptive-ui/reference';
-import type { BiometricCardCallback, BiometricCardFormData } from './biometric-card.options.js';
+import type { MFACardCallback, MFACardFormData } from './mfa-card.options.js';
 
-export class BiometricCard extends FASTElement {
+export class MFACard extends FASTElement {
   /**
    * The placeholder content that gets passed to the internal mobile number text field.
    */
@@ -35,7 +35,7 @@ export class BiometricCard extends FASTElement {
   public maxlength!: number;
 
   @observable
-  public callback!: BiometricCardCallback;
+  public callback!: MFACardCallback;
 
   /**
    * @internal
@@ -47,11 +47,11 @@ export class BiometricCard extends FASTElement {
    * @internal
    */
   public handleSubmit(): void {
-    const data = formValues(this.form) as BiometricCardFormData;
+    const data = formValues(this.form) as MFACardFormData;
 
     this.callback?.(data);
     this.$emit(
-      'biometric-request',
+      'changed',
       data,
       {
         bubbles: false,

@@ -2,16 +2,16 @@ import { customElement } from '@microsoft/fast-element';
 import { cardDefinition } from '@adaptive-web/adaptive-web-components/card';
 import { textFieldDefinition } from '@adaptive-web/adaptive-web-components/text-field';
 import { buttonDefinition } from '@adaptive-web/adaptive-web-components/button';
-import { BiometricCard as T } from './biometric-card.js';
-import { biometricCardTemplate } from './biometric-card.template.js';
-import { biometricCardStyles } from './biometric-card.styles.js';
+import { MFACard as T } from './mfa-card.js';
+import { mfaCardTemplate } from './mfa-card.template.js';
+import { mfaCardStyles } from './mfa-card.styles.js';
 
 /**
- * @tag biometric-card
- * @summary The `<biometric-card>` element can be used to send biometric requests for a given user's mobile phone number to iValt's API.
+ * @tag mfa-card
+ * @summary The `<mfa-card>` element can be used to send mfa requests for a given user's mobile phone number to iValt's API.
  * This component **only** handles the UX for capturing the user's mobile number and does not handle communication with an application's backend.
  * 
- * @fires biometric-request - A custom event that contains the form's data.
+ * @fires mfa-request - A custom event that contains the form's data.
  * 
  * @prop callback - A custom callback that gets called when the card's form is submitted.
  * The callback is passed the form's data.
@@ -31,16 +31,16 @@ import { biometricCardStyles } from './biometric-card.styles.js';
  * @part submit-button__control - The submit button's internal control element.
  */
 @customElement({
-  name: 'biometric-card',
-  template: biometricCardTemplate({
+  name: 'mfa-card',
+  template: mfaCardTemplate({
     card: cardDefinition,
     textField: textFieldDefinition,
     button: buttonDefinition,
     mobileNumberLabel: 'mobile phone',
     submitButtonContent: 'send request'
   }),
-  styles: biometricCardStyles
+  styles: mfaCardStyles
 })
 // This is setup this way because CEM looks for the @customElement decorator and the decorator must be used on a class declaration.
 // @ts-ignore
-class BiometricCard extends T {}
+class MFACard extends T {}

@@ -4,7 +4,7 @@ import type { StaticallyComposableHTML, TemplateElementDependency } from '@micro
 /**
  * @public
  */
-export type BiometricCardTemplateOptions = {
+export type MFACardTemplateOptions = {
   card: TemplateElementDependency;
   textField: TemplateElementDependency;
   button: TemplateElementDependency;
@@ -15,11 +15,11 @@ export type BiometricCardTemplateOptions = {
 /**
  * @internal
  */
-export type BiometricCardFormData = {
+export type MFACardFormData = {
   mobile: string;
 };
 
 /**
  * @public
  */
-export type BiometricCardCallback = <T = any>(data: BiometricCardFormData) => T;
+export type MFACardCallback = <T = any>(data: MFACardFormData) => T;

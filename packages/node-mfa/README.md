@@ -1,38 +1,39 @@
-# @trans-stat/biometrics
+# @trans-stat/node-mfa
 A simple node.js wrapper for the [iValt](https://ivalt.com/) biometric authentication API
 
 ## installation
 ### npm
 ```shell
-npm install @trans-stat/biometrics
+npm install @trans-stat/node-mfa
 ```
 
 ### yarn
 ```shell
-yarn add @trans-stat/biometrics
+yarn add @trans-stat/node-mfa
 ```
 
 ## Usage
+### iValt API Wrapper
 1. Make sure you have downloaded the iValt app on your mobile phone and followed the onboarding process there.
 2. Add a `.env` file with your iValt API key
 ```yml
 IVALT_API_KEY=YOUR_API_KEY_HERE
 ```
-3. Import the `BiometricsClient` class and instantiate it with your api key.
+3. Import the `IValtClient` class and instantiate it with your api key.
 ```ts
-import { BiometricsClientClient } from '@trans-stat/biometrics';
+import { IValtClient } from '@trans-stat/node-mfa/ivalt';
 import process from 'node:process';
 
-const biometricsClient = new BiometricsClient(process.env.IVALT_API_KEY);
+const ivaltClient = new IValtClient(process.env.IVALT_API_KEY);
 ```
-4. Use the `biometricsClient` to make calls to the iValt API. This can be easily integrated in your preferred node.js framework.
+4. Use the `IValtClient` to make calls to the iValt API. This can be easily integrated in your preferred node.js framework.
 5. To send an authentication request, call the `biometricAuthRequest` method and pass the phone number of the user being authenticated.
 ```ts
-biometricsClient.biometricAuthRequest('+1234567890');
+ivaltClient.biometricAuthRequest('+1234567890');
 ```
 6. To check the status of the request, call the `biometricAuthResult` method and pass the same phone number that was passed to the previous requst.
 ```ts
-biometricsClient.biometricAuthResult('+1234567890');
+ivaltClient.biometricAuthResult('+1234567890');
 ```
 
 > NOTE: In order to reduce network traffic between the client and server it is recommended that you

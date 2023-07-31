@@ -1,1 +1,1 @@
-export * from './biometric-card/index.js';
+export * from './mfa-card/index.js';

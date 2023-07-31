@@ -1,6 +1,6 @@
 {
-  "name": "@trans-stat/biometrics",
-  "description": "Node.js esm wrapper for iValt biometric authentication.",
+  "name": "@trans-stat/node-mfa",
+  "description": "Node.js ESM and CommonJS wrapper for different multifactor authentication services and APIs",
   "version": "0.0.0",
   "license": "MIT",
   "type": "module",
@@ -23,6 +23,10 @@
         "require": "./dist/index.min.cjs"
       },
       "types": "./dist/dts/index.d.ts"
+    },
+    "./*": {
+      "import": "./dist/esm/*/index.js",
+      "types": "./dist/dts/*/index.d.ts"
     }
   },
   "scripts": {

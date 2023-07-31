@@ -1,7 +1,7 @@
 import { css } from '@microsoft/fast-element';
 import { densityItemContainer } from '@adaptive-web/adaptive-ui/reference';
 
-export const biometricCardStyles = css`
+export const mfaCardStyles = css`
   :host { display: contents; }
 
   [part=card] {
