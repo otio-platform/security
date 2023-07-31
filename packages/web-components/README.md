@@ -17,6 +17,19 @@ yarn add @trans-stat/auth-components
 ```
 
 ## Usage
+### Configuring vscode intellisense for Web Components
+Add a `.vscode/settings.json` file to the root of your repository and set the html and css custom data paths to point to the auth-component's custom data files.
+```json
+{
+  "html.customData": [
+    "node_modules/@trans-stat/auth-components/dist/html-custom-data.json"
+  ],
+  "css.customData": [
+    "node_modules/@trans-stat/auth-components/dist/css-custom-data.json"
+  ]
+}
+```
+
 ### `<biometric-card>`
 > NOTE: This element is intended to be used with the `@trans-stat/biometrics` package in the backend.
 These two packages create a fullstack wrapper for [iValt's](https://ivalt.com) biometrics API
