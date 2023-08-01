@@ -1,7 +1,7 @@
 {
   "name": "@trans-stat/auth-components",
   "description": "Web Components for authentication UX patterns.",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "main": "dist/index.js",
   "type": "module",
   "repository": "https://github.com/trans-stat/tas-security.git",

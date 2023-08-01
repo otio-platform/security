@@ -1,7 +1,0 @@
-{
-  "type": "minor",
-  "comment": "renaming things and shifting files around",
-  "packageName": "@trans-stat/node-mfa",
-  "email": "32497422+KingOfTac@users.noreply.github.com",
-  "dependentChangeType": "patch"
-}

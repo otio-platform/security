@@ -1,0 +1,20 @@
+{
+  "name": "@trans-stat/auth-components",
+  "entries": [
+    {
+      "date": "Tue, 01 Aug 2023 02:35:34 GMT",
+      "version": "0.1.0",
+      "tag": "@trans-stat/auth-components_v0.1.0",
+      "comments": {
+        "minor": [
+          {
+            "author": "32497422+KingOfTac@users.noreply.github.com",
+            "package": "@trans-stat/auth-components",
+            "commit": "1d0ad16906bd95aa4daa886f4650af15a286748d",
+            "comment": "add biometric-card component"
+          }
+        ]
+      }
+    }
+  ]
+}
