@@ -1,0 +1,13 @@
+{
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "editor.tabSize": 2,
+  "editor.useTabStops": false,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "html.customData": [
+    "packages/web-components/dist/html-custom-data.json"
+  ],
+  "css.customData": [
+    "packages/web-components/dist/css-custom-data.json"
+  ]
+}

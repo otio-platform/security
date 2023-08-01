@@ -1,0 +1,45 @@
+{
+  "name": "@trans-stat/tas-security",
+  "version": "0.0.1",
+  "author": "trans-stat",
+  "description": "Advanced security solutions for custom enterprise web applications",
+  "homepage": "https://github.com/trans-stat/tas-security#readme",
+  "license": "MIT",
+  "packageManager": "npm@9.1.1",
+  "repository": "https://github.com/trans-stat/tas-security.git",
+  "publishConfig": {
+    "@trans-stat:registry": "https://npm.pkg.github.com",
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/trans-stat/tas-security/issues"
+  },
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "change": "beachball change",
+    "checkchange": "beachball check",
+    "release": "beachball publish"
+  },
+  "dependencies": {
+    "@adaptive-web/adaptive-ui": "^0.2.0",
+    "@adaptive-web/adaptive-web-components": "^0.4.0",
+    "@microsoft/fast-element": "2.0.0-beta.24",
+    "@microsoft/fast-foundation": "3.0.0-alpha.28",
+    "@open-wc/form-helpers": "^0.2.3",
+    "tslib": "^2.5.3"
+  },
+  "devDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.8.4",
+    "@types/node": "^20.3.1",
+    "beachball": "^2.36.0",
+    "cem-plugin-vs-code-custom-data-generator": "^1.4.1",
+    "esbuild": "^0.18.1",
+    "esbuild-plugin-tsc": "^0.4.0",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.1.3"
+  }
+}
