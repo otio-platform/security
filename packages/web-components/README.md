@@ -7,6 +7,19 @@ Web Components built with FAST for easy user authentication UX.
 While these frontend Web Components can be used without the backend package, they will work best as a fullstack solution.
 
 ## installation
+Before installing, you will need to configure npm to point the `@trans-stat` scope to the GitHub Packages registry.
+### With the CLI
+```shell
+npm config set @trans-stat:registry https://npm.pkg.github.com
+```
+
+### With `.npmrc`
+```yml
+@trans-stat:registry=https://npm.pkg.github.com
+```
+
+After configuring the registry settings, install normally
+
 ### npm
 ```shell
 npm install @trans-stat/auth-components
