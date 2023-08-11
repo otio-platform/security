@@ -4,13 +4,18 @@
   "version": "0.1.0",
   "license": "MIT",
   "type": "module",
+  "main": "./dist/index.min.cjs",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/dts/index.d.ts",
   "repository": "https://github.com/trans-stat/tas-security.git",
   "publishConfig": {
-    "@trans-stat:registry": "https://npm.pkg.github.com",
+    "@trans-stat:registry": "https://registry.npmjs.org",
     "access": "public"
   },
   "files": [
-    "dist"
+    "dist",
+    "pacakge.json",
+    "README.md"
   ],
   "exports": {
     ".": {
