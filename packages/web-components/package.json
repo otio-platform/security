@@ -2,15 +2,18 @@
   "name": "@trans-stat/auth-components",
   "description": "Web Components for authentication UX patterns.",
   "version": "0.1.0",
-  "main": "dist/index.js",
   "type": "module",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/dts/index.d.ts",
   "repository": "https://github.com/trans-stat/tas-security.git",
   "publishConfig": {
-    "@trans-stat:registry": "https://npm.pkg.github.com",
+    "@trans-stat:registry": "https://registry.npmjs.org",
     "access": "public"
   },
   "files": [
-    "dist"
+    "dist",
+    "package.json",
+    "README.md"
   ],
   "exports": {
     ".": {
