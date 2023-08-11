@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "switch to npm for publishes",
-  "packageName": "@trans-stat/node-mfa",
-  "email": "32497422+KingOfTac@users.noreply.github.com",
-  "dependentChangeType": "patch"
-}

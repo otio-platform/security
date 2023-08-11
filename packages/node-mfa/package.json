@@ -1,7 +1,7 @@
 {
   "name": "@trans-stat/node-mfa",
   "description": "Node.js ESM and CommonJS wrapper for different multifactor authentication services and APIs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.min.cjs",
