@@ -8,7 +8,7 @@
   "packageManager": "npm@9.1.1",
   "repository": "https://github.com/trans-stat/tas-security.git",
   "publishConfig": {
-    "@trans-stat:registry": "https://npm.pkg.github.com",
+    "@trans-stat:registry": "https://registry.npmjs.org",
     "access": "public"
   },
   "bugs": {
