@@ -28,7 +28,7 @@
     "clean": "rimraf dist",
     "build:tsc": "tsc -p ./tsconfig.json",
     "build:bundle-cjs": "esbuild src/index.ts --format=cjs --bundle --minify --sourcemap --outfile=dist/index.min.cjs",
-    "build": "npm run clean && npm run build:tsc && npm run build:bundle-esm && npm run build:bundle-cjs"
+    "build": "npm run clean && npm run build:tsc && npm run build:bundle-cjs"
   },
   "dependencies": {
     "tslib": "^2.5.3"
