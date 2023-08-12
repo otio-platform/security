@@ -29,6 +29,7 @@ export class IValtClient implements IVALT.Client {
    */
   async #apiRequest(route: string, mobile: string): Promise<Response> {
     return fetch(`${this.#BASE_URL}/${route}`, {
+      method: 'POST',
       headers: this.#API_HEADERS,
       body: new URLSearchParams({ mobile })
     });
