@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "add missing http method for ivalt requests",
-  "packageName": "@trans-stat/node-mfa",
-  "email": "32497422+KingOfTac@users.noreply.github.com",
-  "dependentChangeType": "patch"
-}
